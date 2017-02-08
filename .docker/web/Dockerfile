@@ -46,5 +46,5 @@ RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 
 # Install Git
-RUN sudo apt-get update && sudo apt-get install -yq \
+RUN apt-get update && apt-get install -yq \
     git
